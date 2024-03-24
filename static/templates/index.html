@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .logout-button, .header-button {
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .header-right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: center; /* Center the buttons horizontally */
+            align-items: center; /* Center the buttons vertically */
+        }
+
+        .edit-button, .delete-button {
+            margin: 0 2px; /* Add some space around the buttons */
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .edit-button {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .edit-button:hover {
+            background-color: #0056b3;
+        }
+
+        .delete-button {
+            margin-left: 5px;
+            background-color: #dc3545; 
+            color: white;
+        }
+
+        .delete-button::before {
+            content: '−'; 
+            color: white;
+            font-size: 16px; 
+        }
+
+        .delete-button:hover {
+            background-color: #bd2130; 
+        }
+
+
+</style>
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img class="top-left-image" src="{{ url_for('static', filename='Virginia_Tech_logo.svg.png') }}" alt="Top Left Image">
+        <h1 class="title">Inventory</h1>
+        
+            <div class="header-right">
+                <div class="dropdown">
+                    <button class="dropbtn">Options</button>
+                    <div class="dropdown-content">
+                        {% if request.path == '/insert' %}
+                            <a href="{{ url_for('index') }}">Back to Index</a>
+                        {% elif session.get('role') == 'Lead' %}
+                            <a href="{{ url_for('insert') }}">Insert Item</a>
+                            <a href="{{ url_for('make_lead') }}">Manage Lead Roles</a>
+                            <a href="{{ url_for('lead_report') }}">Lead Statistical Report</a>
+                        {% endif %}
+                        <a href="{{ url_for('stat_report') }}">Statistics Report</a>
+                        <a href="{{ url_for('logout') }}">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script type="text/javascript">
+            var userRole = "{{ session.get('role') }}"; 
+        </script>
+
+    <!-- Filters Section -->
+<div class="filters">
+    <label for="typeFilter">Filter by Type:</label>
+    <select id="typeFilter" onchange="applyFilters()">
+        <option value="">All Types</option>
+    </select>
+
+    <label for="locationFilter">Filter by Location:</label>
+    <select id="locationFilter" onchange="applyFilters()">
+        <option value="">All Locations</option>
+    </select>
+
+    <label for="subteamFilter">Filter by Subteam:</label>
+    <select id="subteamFilter" onchange="applyFilters()">
+        <option value="">All Subteams</option>
+    </select>
+
+</div>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Action</th> 
+                <th>Part Number</th>
+                <th>Quantity</th>
+                <th>Description</th>
+                <th>Location</th>
+                <th>Link</th>
+                <th>Price</th>
+                <th>Type</th>
+                <th>Cabinet</th>
+                <th>Subteam</th>
+                <th>Date Added</th>
+            </tr>
+        </thead>
+        
+        <tbody id="inventory-table">
+        </tbody>
+    </table>
+    <div id="pagination">
+        <button onclick="prevPage()">Prev</button>
+        <span id="page-num">1</span>
+        <button onclick="nextPage()">Next</button>
+    </div>
+
+    <script>
+        var currentPage = 1;
+        var recordsPerPage = 10;
+        var inventoryData = [];
+        var filteredData = [];
+
+        function numberOfPages(data) {
+            return Math.ceil(data.length / recordsPerPage);
+        }
+
+        function changePage(page, data) {
+            var tableBody = document.getElementById('inventory-table');
+            tableBody.innerHTML = "";
+
+            var start = (page - 1) * recordsPerPage;
+            var end = start + recordsPerPage;
+            var slicedData = data.slice(start, end);
+
+            populateTable(slicedData);
+
+            document.getElementById("page-num").innerText = currentPage;
+        }
+
+        function nextPage() {
+            if (currentPage < numberOfPages(filteredData)) {
+                currentPage++;
+                changePage(currentPage, filteredData);
+            }
+        }
+
+        function prevPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                changePage(currentPage, filteredData);
+            }
+        }
+
+function editItem(partNumber) {
+    if (userRole !== 'Lead') {
+        alert("You do not have permission to edit items.");
+        return; 
+    }
+
+    window.location.href = '/edit/' + partNumber;
+}
+
+function populateTable(data) {
+    var tableBody = document.getElementById('inventory-table');
+    tableBody.innerHTML = ""; 
+
+    data.forEach(function(item) {
+        var row = document.createElement('tr');
+        
+        var actionCell = document.createElement('td');
+        var actionButtonsContainer = document.createElement('div');
+        actionButtonsContainer.className = 'action-buttons';
+        
+        var editButton = document.createElement('button');
+        editButton.className = "edit-button";
+        editButton.innerHTML = "&#9998;"; 
+        editButton.addEventListener('click', function() {
+            editItem(item['Part Number']);
+        });
+        actionCell.appendChild(editButton);
+
+        var deleteButton = document.createElement('button');
+        deleteButton.className = "delete-button";
+        deleteButton.addEventListener('click', function() {
+            deleteItem(item['Part Number']); 
+        });
+        actionButtonsContainer.appendChild(editButton);
+        actionButtonsContainer.appendChild(deleteButton);
+        actionCell.appendChild(actionButtonsContainer);
+
+
+        row.appendChild(actionCell);
+
+        var order = ['Part Number', 'Quantity', 'Description', 'Location', 'Link', 'Price', 'Type', 'Cabinet', 'Subteam', 'DateAdded'];
+        order.forEach(function(key) {
+            var cell = document.createElement('td');
+            if (key === 'Link') {
+                var link = document.createElement('a');
+                link.href = item[key];
+                link.textContent = "View";
+                cell.appendChild(link);
+            } else {
+                cell.textContent = item[key];
+            }
+            row.appendChild(cell);
+        });
+
+        tableBody.appendChild(row);
+    });
+}
+
+
+
+function deleteItem(partNumber) {
+    fetch('/delete/' + partNumber, {
+        method: 'DELETE',
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("You don't have the permissions necessary to delete");
+        }
+        return response.json();
+    })
+    .then(data => {
+        
+    })
+    .catch(error => {
+        alert(error.message);
+    });
+}
+
+
+        function populateFilters(data) {
+            const typeSet = new Set();
+            const locationSet = new Set();
+            const subteamSet = new Set();
+
+            for (const item of data) {
+                typeSet.add(item['Type']);
+                locationSet.add(item['Location']);
+                subteamSet.add(item['Subteam']);
+            }
+
+            populateFilterDropdown('typeFilter', typeSet);
+            populateFilterDropdown('locationFilter', locationSet);
+            populateFilterDropdown('subteamFilter', subteamSet);
+        }
+
+
+        function populateFilterDropdown(dropdownId, dataSet) {
+            const dropdown = document.getElementById(dropdownId);
+            for (const value of dataSet) {
+                const option = document.createElement('option');
+                option.value = value;
+                option.innerText = value;
+                dropdown.appendChild(option);
+            }
+        }
+
+        function applyFilters() {
+    const type = document.getElementById('typeFilter').value;
+    const location = document.getElementById('locationFilter').value;
+    const subteam = document.getElementById('subteamFilter').value;
+
+    filteredData = inventoryData.filter(item => {
+        return (type === "" || item['Type'] === type) &&
+               (location === "" || item['Location'] === location) &&
+               (subteam === "" || item['Subteam'] === subteam);
+    });
+
+    currentPage = 1;
+    changePage(currentPage, filteredData);
+}
+
+
+        window.onload = function() {
+            fetch('/api/inventory')
+                .then(response => response.json())
+                .then(data => {
+                    inventoryData = data;
+                    filteredData = data;
+                    populateFilters(data);
+                    changePage(currentPage, filteredData);
+                })
+                .catch(error => console.error("Error fetching inventory:", error));
+        };
+    </script>
+
+</body>
+</html>

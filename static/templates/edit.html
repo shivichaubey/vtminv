@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Item</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <img class="top-left-image" src="{{ url_for('static', filename='Virginia_Tech_logo.svg.png') }}" alt="Top Left Image">
+    <h1 class="title">Edit Item</h1>
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class="flashes">
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <form method="POST" action="{{ url_for('update_item', part_number=item['Part Number']) }}" class="edit-form">
+        <label for="partNumber">Part Number:</label>
+        <input type="text" id="partNumber" name="partNumber" required value="{{ item['Part Number'] }}">
+        <br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" required value="{{ item['Quantity'] }}">
+        <br>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" required value="{{ item['Description'] }}">
+        <br>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required value="{{ item['Location'] }}">
+        <br>
+
+        <label for="link">Link:</label>
+        <input type="url" id="link" name="link" value="{{ item['Link'] }}">
+        <br>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" min="0" step="0.01" required value="{{ item['Price'] }}">
+        <br>
+
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="type" required value="{{ item['Type'] }}">
+        <br>
+
+        <label for="cabinet">Cabinet:</label>
+        <input type="text" id="cabinet" name="cabinet" required value="{{ item['Cabinet'] }}">
+        <br>
+
+        <label for="subteam">Subteam:</label>
+        <input type="text" id="subteam" name="subteam" required value="{{ item['Subteam'] }}">
+        <br>
+
+        <label for="dateAdded">Date Added:</label>
+        <input type="text" id="dateAdded" name="dateAdded" value="{{ item['DateAdded'] }}" disabled>
+        <br>
+
+        <input type="submit" value="Update Item">
+    </form>
+
+</body>
+</html>

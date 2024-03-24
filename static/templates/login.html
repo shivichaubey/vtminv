@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Login</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <img class="top-left-image" src="{{ url_for('static', filename='Virginia_Tech_logo.svg.png') }}" alt="Top Left Image">
+    <h1 class="title">User Login</h1>
+
+    <form action="/login" method="post" class="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+
+        <input type="submit" value="Login">
+    </form>
+
+    <p>Don't have an account? <a href="/register">Register</a></p>
+    <p>Change Password. <a href="/changepassword">Click Here</a></p>
+
+    <script>
+        window.onload = function() {
+            var message = "{{ message }}";
+            if (message) {
+                alert(message);
+            }
+        };
+    </script>
+
+</body>
+</html>

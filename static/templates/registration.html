@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <img class="top-left-image" src="{{ url_for('static', filename='Virginia_Tech_logo.svg.png') }}" alt="Top Left Image">
+    <h1 class="title">User Registration</h1>
+
+    <form action="/register" method="post" class="registration-form">
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" required>
+        <br>
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required>
+        <br>
+        
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <p>Already have an account? <a href="/login">Login</a></p>
+
+    <script>
+        window.onload = function() {
+            var message = "{{ message }}";
+            if (message) {
+                alert(message);
+            }
+        };
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Statistical Reports</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        canvas {
+            display: block;
+            max-width: 100%;
+            height: 400px !important;
+        }
+        .chart-container {
+            width: 100%;
+            overflow-x: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .title {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .chart-container {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <img class="top-left-image" src="{{ url_for('static', filename='Virginia_Tech_logo.svg.png') }}" alt="Top Left Image">
+    <h1 class="title">Statistical Report</h1>
+
+    <div class="chart-container">
+        <canvas id="quantityChart"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="priceChart"></canvas>
+    </div>
+
+    <script type="text/javascript">
+        function getColorForQuantity(quantity, maxQuantity) {
+            const relativeQuantity = quantity / maxQuantity;
+            const hue = relativeQuantity * 120;
+            return `hsl(${hue}, 100%, 50%)`;
+        }
+
+        fetch('/api/inventory')
+            .then(response => response.json())
+            .then(data => {
+                const labels = data.map(item => item['Part Number']);
+                const quantities = data.map(item => item['Quantity']);
+                const prices = data.map(item => {
+                    const priceString = item['Price'].replace('$', ''); 
+                    return parseFloat(priceString); 
+                    });
+                const maxQuantity = Math.max(...quantities);
+                const backgroundColors = quantities.map(qty => getColorForQuantity(qty, maxQuantity));
+
+                const quantityChartData = {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Quantity',
+                        backgroundColor: backgroundColors,
+                        borderColor: backgroundColors,
+                        data: quantities,
+                    }]
+                };
+
+                const priceChartData = {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Price',
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        data: prices,
+                    }]
+                };
+
+                const quantityChartConfig = {
+                    type: 'bar',
+                    data: quantityChartData,
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            x: {
+                                ticks: {
+                                    autoSkip: false,
+                                    maxRotation: 90,
+                                    minRotation: 90,
+                                }
+                            },
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    },
+                };
+
+                const priceChartConfig = {
+                    type: 'bar',
+                    data: priceChartData,
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            x: {
+                                ticks: {
+                                    autoSkip: false,
+                                    maxRotation: 90,
+                                    minRotation: 90,
+                                }
+                            },
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    },
+                };
+
+                const quantityCtx = document.getElementById('quantityChart').getContext('2d');
+                new Chart(quantityCtx, quantityChartConfig);
+
+                const priceCtx = document.getElementById('priceChart').getContext('2d');
+                new Chart(priceCtx, priceChartConfig);
+            })
+            .catch(error => {
+                console.error('Error fetching part data:', error);
+            });
+    </script>
+</body>
+</html>

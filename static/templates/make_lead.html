@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make User a Lead</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <img class="top-left-image" src="{{ url_for('static', filename='Virginia_Tech_logo.svg.png') }}" alt="Top Left Image">
+    <h1 class="title">Make User a Lead</h1>
+
+    <form method="POST" action="{{ url_for('make_lead') }}">
+        <label for="user_pid">Select User:</label>
+        <select name="user_pid" id="user_pid" required>
+            {% for user in users %}
+                {% if user.Role != 'Lead' %}
+                    <option value="{{ user.PID }}">{{ user.FirstName }} {{ user.LastName }}</option>
+                {% endif %}
+            {% endfor %}
+        </select>
+
+        <input type="submit" value="Make Lead">
+    </form>
+
+    
+</body>
+</html>

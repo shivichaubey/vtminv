@@ -1,0 +1,91 @@
+Part Number,Quantity,Description,Location,Link,Price,Type
+C3216X5R1H106K160AB,6,CAP 10uF 50V 1206,COMPONENT BOX 1,https://www.digikey.com/en/products/detail/tdk-corporation/C3216X5R1H106K160AB/2443476?utm_adgroup=Capacitors&utm_source=google&utm_medium=cpc&utm_campaign=Dynamic%20Search_EN_Product&utm_term=&utm_content=Capacitors&gclid=Cj0KCQjw9MCnBhCYARIsAB1WQVVte4k53jMv2Al61AZ4LkQElvvIUA6MjwAwHoLQ6MwcAIE403iC7gIaAi5gEALw_wcB,$0.78,Passive_Components
+SMF510KJT,6,10 kOhms +/-5% 5W Chip Resistor 5329,COMPONENT BOX 2,https://www.digikey.com/en/products/detail/te-connectivity-passive-product/SMF510KJT/2367109,$1.10,Passive_Components
+2N3904,6,NPN BJT 200mA 60V,1.H,https://www.mouser.com/ProductDetail/onsemi/2N3904?qs=vLkC5FC1VN%252Be9CkZwHKMwg%3D%3D,N/A,Semiconductors
+PN2222A,10,NPN BJT 600mA 75V,1.H,https://www.mouser.com/ProductDetail/onsemi/PN2222A?qs=xZq1yRCsb1dx5fzwMfcUgA%3D%3D,N/A,Semiconductors
+P8N50D,4,"N-Channel MOSFET Vgs = 30V, Vds = 500V, Id = 8.7A",1.G,https://www.mouser.com/ProductDetail/Vishay-Siliconix/SIHP8N50D-E3?qs=EihRZLdKnF2nSxOez%252BIiJQ%3D%3D,$1.80,Semiconductors
+IRFZ44N,1,"N-Channel MOSFET Vgs = 20V, Vds = 60V, Id = 50A",1.G,https://www.mouser.com/ProductDetail/Vishay-Siliconix/IRFZ44N?qs=zKmEZnHtB2AXLHRp632ECQ%3D%3D,N/A,Semiconductors
+IRF510,9,"N-Channel MOSFET Vgs = 20V, Vds = 100V, Id = 5.6A",1.G,https://www.mouser.com/ProductDetail/Vishay-Siliconix/IRF510?qs=ehM%252BESVsXgwwPzb18JjqFw%3D%3D,N/A,Semiconductors
+TIP122,1,NPN Darlington Pair,1.H,https://www.mouser.com/ProductDetail/STMicroelectronics/TIP122?qs=ljbEvF4DwOPuWPwhe20bIQ%3D%3D,$0.82,Semiconductors
+FQP17P06,3,"P-Channel MOSTFET Vgs = 20V, Vds = -60V, Id = -17A",1.I,https://www.mouser.com/ProductDetail/onsemi-Fairchild/FQP17P06?qs=FOlmdCx%252BAA0zYGfx%252BtdMqQ%3D%3D,$2.03,Semiconductors
+IXTP24P085T,13,"P-Channel MOSTFET Vgs = 15V, Vds = 85V, Id = 24A",1.I,https://www.mouser.com/ProductDetail/IXYS/IXTP24P085T?qs=cvHLLyFtoE1VFqi6X8tfsA%3D%3D,$2.89,Semiconductors
+MCR8NG,1,SCR 800V 8A,1.H,https://www.mouser.com/ProductDetail/Littelfuse/MCR8NG?qs=sK5eIuwOod6zY3QzL%252B97qg%3D%3D,$1.32,Semiconductors
+ER3JB-TP,93,Diode 600 V 3A Surface Mount DO-214AA (SMB),COMPONENT BOX 2,https://www.digikey.com/en/products/detail/micro-commercial-co/ER3JB-TP/3191561,$0.42,Semiconductors
+BSS159NH6327XTSA2,4,MOSFET N-Ch 60V 230mA SOT-23-3,COMPONENT BOX 1,https://www.mouser.com/ProductDetail/Infineon-Technologies/BSS159NH6327XTSA2?qs=K00xGehIljvJjqRECkxDcQ%3D%3D,$0.52,Semiconductors
+RB081LAM-20TR,2,Schottky 25V 5A 0805,COMPONENT BOX 1,https://www.digikey.com/en/products/detail/rohm-semiconductor/RB081LAM-20TR/7793312?utm_adgroup=Semiconductor%20Modules&utm_source=google&utm_medium=cpc&utm_campaign=Dynamic%20Search_EN_Product&utm_term=&utm_content=Semiconductor%20Modules&gclid=Cj0KCQjw9MCnBhCYARIsAB1WQVU2BUCi2hjAI8phGfutr_yIiPc72S4UgSjd7IMT7FBPtzmOeVCZIi0aAkhBEALw_wcB,$0.46,Semiconductors
+DMN6075S-13,4,N-Channel 60 V 2A (Ta) 800mW (Ta) Surface Mount SOT-23-3,COMPONENT BOX 1,https://www.digikey.com/en/products/detail/diodes-incorporated/DMN6075S-13/5149391?utm_adgroup=Battery%20Products&utm_source=google&utm_medium=cpc&utm_campaign=Dynamic%20Search_EN_Product&utm_term=&utm_content=Battery%20Products&gclid=Cj0KCQjw9MCnBhCYARIsAB1WQVUgwVdgSINwZgjl7nfq5Du63-eHxTXXyqxH2Z-9VgrBFxnUW9GtumMaAh-VEALw_wcB,$0.41,Semiconductors
+BZY55C12RYG,54,Zener Diode 12 V 500 mW +/-5% Surface Mount 0805,COMPONENT BOX 1,https://www.digikey.com/en/products/detail/taiwan-semiconductor-corporation/BZY55C12-RYG/7372111?utm_medium=buyNow&utm_source=FindChips,N/A,Semiconductors
+"DF2B36FU,H3F",150,TVS DIODE 28VWM 40VC USC,COMPONENT BOX 1,https://www.digikey.com/en/products/detail/toshiba-semiconductor-and-storage/DF2B36FU-H3F/5977720?utm_adgroup=Circuit%20Protection&utm_source=google&utm_medium=cpc&utm_campaign=Dynamic%20Search_EN_Product&utm_term=&utm_content=Circuit%20Protection&gclid=Cj0KCQjw9MCnBhCYARIsAB1WQVXt0d25pzIKsv0Jn3CuB8-KkgJIBKKGXK5dYsulYXD3U7fAlOf653QaAvUUEALw_wcB,$0.34,Semiconductors
+CD4081BE,8,Quad 2-Input AND Logic Gate,1.L,https://www.mouser.com/ProductDetail/Texas-Instruments/CD4081BE?qs=dQbkqP7qjaZ0jSz5I7zHYA%3D%3D,$0.87,Integrated_Chips
+CD4069UBE,8,Sextuple NOT LOGIC Gate,1.L,https://www.mouser.com/ProductDetail/Texas-Instruments/CD4069UBE?qs=gqbMQSs93zN4MVMbMFTI6g%3D%3D&gclid=Cj0KCQjw48OaBhDWARIsAMd966Di-IBywo9MTbLLGceU9YwaQfinAuSVHvZ99FZ1FcfCbJYM99HcY-caAtG0EALw_wcB,$0.89,Integrated_Chips
+4N25,4,NPN Optocoupler,1.A,https://www.mouser.com/ProductDetail/Vishay-Semiconductors/4N25?qs=8Ee2Dc0%2F0IdkAlKrFkNMCA%3D%3D,$0.58,Integrated_Chips
+L293D,1,Push-Pull 4-Channel Driver w/ Diodes,1.A,https://www.mouser.com/ProductDetail/STMicroelectronics/L293D?qs=gr8Zi5OG3MgMJ1ICDzLQbg%3D%3D,$8.52,Integrated_Chips
+TL494CN,1,PWM Controller,1.A,https://www.mouser.com/ProductDetail/Texas-Instruments/TL494CN?qs=N6WZOzgtpqWAYQVxthNGyw%3D%3D,$0.47,Integrated_Chips
+LM339N,6,Quad Differential Comparator,1.B,https://www.mouser.com/ProductDetail/Texas-Instruments/LM339N?qs=rshUhwi3fbY%252BaR%252BOl3edNw%3D%3D,$0.49,Integrated_Chips
+NE555P,6,555 Timer,1.A,https://www.mouser.com/ProductDetail/Texas-Instruments/NE555P?qs=rkhjVJ6%2F3EIf4CWgjIKuKQ%3D%3D,$0.49,Integrated_Chips
+UA741CN,2,Single Operational Amplifier,1.A,https://www.mouser.com/ProductDetail/STMicroelectronics/UA741CN?qs=wnz1wyZ0ZnWrt9WAQ171Aw%3D%3D,N/A,Integrated_Chips
+ILD74,5,"Dual-Channel Optocoupler, 1 NPN, 1 PNP",1.A,https://www.mouser.com/ProductDetail/Vishay-Semiconductors/ILD74?qs=xCMk%252BIHWTZPVS8Nbap2JmA%3D%3D,$1.80,Integrated_Chips
+TL7660CP,4,CMOS Voltage Converter,1.A,https://www.mouser.com/ProductDetail/Texas-Instruments/TL7660CP?qs=jZi1jxfVU95L7nksKDeR2g%3D%3D,$1.98,Integrated_Chips
+CD4050BE,4,CMOS Hex Non-Inverting Buffer and Converter,1.L,https://www.mouser.com/ProductDetail/Texas-Instruments/CD4050BE?qs=j%2FZo4ajzVJLKLpJvKsajlg%3D%3D,$0.64,Integrated_Chips
+CD4011BE,11,Quad 2-Input NAND Logic Gate,1.L,https://www.mouser.com/ProductDetail/Texas-Instruments/CD4011BE?qs=st7IWvlL5%2FgbunuzXw39Lg%3D%3D,$0.60,Integrated_Chips
+LM2937ET-5.0,2,12-5V LDO 0.5A,1.F,https://www.mouser.com/ProductDetail/Texas-Instruments/LM2937ET-50-NOPB?qs=X1J7HmVL2ZFIikV4xSCvRQ%3D%3D&gclid=Cj0KCQjw48OaBhDWARIsAMd966Co1doksRWVInX9Rxn9kJjXAib-B68_S3Azw7fNecxEInR4MZrrdjQaAlSqEALw_wcB,$2.16,Integrated_Chips
+LM7805C,4,12-5V LDO 1.5A,1.F,https://www.mouser.com/ProductDetail/Texas-Instruments/LM7805CT-NOPB?qs=sGAEpiMZZMtUqDgmOWBjgBeg5pzg%2F1aQ1zF1gFoZCvY%3D,$1.96,Integrated_Chips
+LM317T,1,Adjustable LDO 1.5A,1.F,https://www.mouser.com/ProductDetail/STMicroelectronics/LM317T?qs=swDD%252BF%252Bps7c8uLyY%252B3mJJw%3D%3D,$0.80,Integrated_Chips
+LM2931CT,2,Adjustable LDO 0.1A,1.F,https://www.mouser.com/ProductDetail/Texas-Instruments/LM2931CT-NOPB?qs=X1J7HmVL2ZFBy34m8Gh0FQ%3D%3D,$1.71,Integrated_Chips
+L7805CV,1,12-5V LDO 1.5A,1.F,https://www.mouser.com/ProductDetail/STMicroelectronics/L7805CV?qs=9NrABl3fj%2FqplZAHiYUxWg%3D%3D,$0.69,Integrated_Chips
+LT1167CN8,13,"Instrumentation Amplifier CMRR = 140dB, Io = 27mA",1.C,https://www.mouser.com/ProductDetail/Analog-Devices/LT1167CN8?qs=ytflclh7QUW5pwG9VeScCw%3D%3D,N/A,Integrated_Chips
+LF356N,59,Single Operational Amplifier,1.K,https://www.mouser.com/ProductDetail/Texas-Instruments/LF356N-NOPB?qs=X1J7HmVL2ZFLfGOAUcX5xg%3D%3D&gclid=Cj0KCQjw48OaBhDWARIsAMd966CVz_MVmGrcsDA7QgT5aX7yBs100dJKbyXOP1VEGYE9AL8gyX8vexYaAgOGEALw_wcB,$1.14,Integrated_Chips
+LM311P,9,Single Differential Comparator,1.B,https://www.mouser.com/ProductDetail/Texas-Instruments/LM311P?qs=0OT4q4QBUTKsKDe9sMZxLw%3D%3D&gclid=Cj0KCQjw48OaBhDWARIsAMd966DxiZb-Ol-EJyyoG6YbrhM2y6zKFCi88apJuQJ3IykCaUJx1WwSmOMaAlErEALw_wcB,$0.57,Integrated_Chips
+LM311N,3,Single Voltage Comparator,1.B,https://www.mouser.com/ProductDetail/Texas-Instruments/LM311N?qs=X1J7HmVL2ZFjYW9HuSH3mg%3D%3D,N/A,Integrated_Chips
+TLC555CP,42,555 Timer,COMPONENT BOX 2,https://www.mouser.com/ProductDetail/Texas-Instruments/TLC555CP?qs=gb35HGp1gQKr83Vf%252BmVC1w%3D%3D&gclid=Cj0KCQjw48OaBhDWARIsAMd966Dr7xQ8-Uirdk6ybng0YzK-QmVO0t9N1vKILcP9bepsqWzuWiLaEykaAleNEALw_wcB,$0.96,Integrated_Chips
+LM324AN,32,Quad Operational Amplifier,1.D,https://www.mouser.com/ProductDetail/Texas-Instruments/LM324AN?qs=KaAwwOlwapuGsi7hHRxlkw%3D%3D&gclid=Cj0KCQjw48OaBhDWARIsAMd966BBpsBF5MFFKqVfvm_dX0xJSh1gCSDFOsVFzFG9_Fp3uCgHn0_a7rgaAocCEALw_wcB,$0.57,Integrated_Chips
+SN74HC595N,5,Counter Shift Register Tri-State 8-Bit,1.C,https://www.mouser.com/ProductDetail/Texas-Instruments/SN74HC595N?qs=IEl3ej0IqwBTHkYa8XPoMQ%3D%3D,$0.68,Integrated_Chips
+4556AD,8,Dual-Channel Operational Amplifier,1.A,https://www.mouser.com/ProductDetail/Nisshinbo/NJM4556AD?qs=Dx6nUK05NTELd0aHqFd4%252Bw%3D%3D,$0.98,Integrated_Chips
+MAX7221CNG+,9,IC DRVR 7 SEGMENT 8 DIGIT 24DIP,1.K,https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/MAX7221CNG/1511970,$11.89,Integrated_Chips
+PIC18F2480-I/SP,2,8-bit Microcontrollers - MCU 16 KB 768 RAM 25 I/O,1.M,https://www.mouser.com/ProductDetail/Microchip-Technology-Atmel/PIC18F2480-I-SP?qs=5Wx0vN22rFIlIbCq4mf3%2Fw%3D%3D,$8.68,Integrated_Chips
+AD623QN#1144,2,"Single and Dual-Supply, Rail-to-Rail, Low Cost Instrumentation Amplifier",1.C,https://www.analog.com/en/products/ad623.html,$4.62,Integrated_Chips
+TLV9001IDBVR,7,CMOS Amplifier 1 Circuit Rail-to-Rail SOT-23-5,COMPONENT BOX 1,https://www.digikey.com/en/products/detail/texas-instruments/TLV9001IDBVR/9665962?utm_adgroup=Texas%20Instruments&utm_source=google&utm_medium=cpc&utm_campaign=Dynamic%20Search_EN_Focus%20Suppliers&utm_term=&utm_content=Texas%20Instruments&gclid=Cj0KCQjw9MCnBhCYARIsAB1WQVVRCPIt2Ic6k5_CecTvKDTJ0p4NnOEkZRbUZp5YLj2Iw7RZSf_OxeoaAqk_EALw_wcB,$0.47,Integrated_Chips
+MCP6021-I/P,7,General Purpose Amplifier 1 Circuit Rail-to-Rail 8-PDIP,CIRCUIT BOX 2,https://www.digikey.com/en/products/detail/microchip-technology/MCP6021-I-P/417825,$1.45,Integrated_Chips
+LM339LVPWR,9,"Comparator General Purpose Open-Collector, Rail-to-Rail 14-TSSOP",COMPONENT BOX 1,https://www.digikey.com/en/products/detail/texas-instruments/LM339LVPWR/15856786,$0.11,Integrated_Chips
+OPA347PA,5,General Purpose Amplifier 1 Circuit Rail-to-Rail 8-PDIP,CIRCUIT BOX 2,https://www.digikey.com/en/products/detail/texas-instruments/OPA347PA/362272,$0.87,Integrated_Chips
+TCAN1048AVDMTRQ1,2,Dual Can Transceiver,MISC COMP BOX,https://www.mouser.com/ProductDetail/Texas-Instruments/TCAN1048AVDMTRQ1?qs=doiCPypUmgHdAQ9GJsHDoQ%3D%3D,$2.47,Integrated_Chips
+AMC1311BDWVR,6,Isolation op-amp IC 8-SOIC,MISC COMP BOX,https://www.digikey.com/en/products/detail/texas-instruments/AMC1311BDWVR/8020495?utm_adgroup=Texas%20Instruments&utm_source=google&utm_medium=cpc&utm_campaign=Dynamic%20Search_EN_Focus%20Suppliers&utm_term=&utm_content=Texas%20Instruments&gclid=Cj0KCQjw9MCnBhCYARIsAB1WQVVnKRw6tqnoNw2Yzj2VWNa6QWMwdtEMOG1wHhgz4pwJ_bnEyLZ3tY4aAnlMEALw_wcB,$6.01,Integrated_Chips
+TJA1052IT/5Y,3,CAN Digital Isolator 5000Vrms 1 Channel 5Mbps 20kV/us CMTI 16-SOIC,CIRCUIT BOX 2,https://www.digikey.com/en/products/detail/nxp-usa-inc/TJA1052IT-5Y/4020556?utm_adgroup=Battery%20Products&utm_source=google&utm_medium=cpc&utm_campaign=Dynamic%20Search_EN_Product&utm_term=&utm_content=Battery%20Products&gclid=Cj0KCQjw9MCnBhCYARIsAB1WQVUAoeJx5Cvv-ZRcR8NsPzOS8Nq6Cc9rCqBAutGom_gdkSsjslmQ1ZIaAoauEALw_wcB,$7.59,Integrated_Chips
+MAX4518CPD+,3,1 Circuit IC Switch 4:1 100Ohm 14-PDIP,CIRCUIT BOX 2,https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/MAX4518CPD/1780265,$5.92,Integrated_Chips
+ADM3052BRWZ,5,Digital Isolator 2500Vrms 3 Channel 500kbps 25kV/us CMTI 16-SOIC,CIRCUIT BOX 2,https://www.digikey.com/en/products/detail/analog-devices-inc/ADM2483BRWZ-REEL/994494?utm_adgroup=Analog%20Devices&utm_source=google&utm_medium=cpc&utm_campaign=Dynamic%20Search_EN_Focus%20Suppliers&utm_term=&utm_content=Analog%20Devices&gclid=Cj0KCQjw9MCnBhCYARIsAB1WQVX3d5K2S1CBT5V7RlUGfQDTiWQ6M64TRQDiSfomz0S1nlmjfFUnZJcaAk3_EALw_wcB,$7.02,Integrated_Chips
+NA555DR,6,"555 Type, Timer/Oscillator (Single) IC 100kHz 8-SOIC",COMPONENT BOX 1,https://www.digikey.com/en/products/detail/texas-instruments/NA555DR/1571933?utm_adgroup=Texas%20Instruments&utm_source=google&utm_medium=cpc&utm_campaign=Dynamic%20Search_EN_Focus%20Suppliers&utm_term=&utm_content=Texas%20Instruments&gclid=Cj0KCQjw9MCnBhCYARIsAB1WQVXMffd01B5maQp5Vb4wjWvVR1c_DXk4PS2GIytQfqvWLLh66h39-1IaAm95EALw_wcB,$0.42,Integrated_Chips
+ADUM4153ARIZ,2,SPI Digital Isolator 5000Vrms 7 Channel 2Mbps 25kV/us CMTI 20-SOIC,COMPONENT BOX 1,https://www.digikey.com/en/products/detail/analog-devices-inc/ADUM4153ARIZ/5031789,$7.60,Integrated_Chips
+575-4,2,Banana Jack Solder,COMPONENT BOX 2,https://www.digikey.com/en/products/detail/keystone-electronics/575-4/318493?utm_adgroup=Connectors%20%26%20Interconnects&utm_source=google&utm_medium=cpc&utm_campaign=Dynamic%20Search_EN_Product&utm_term=&utm_content=Connectors%20%26%20Interconnects&gclid=Cj0KCQjw9MCnBhCYARIsAB1WQVUv_O8sS0gm1aKfbbdl_zmDCkywrWcxZA3BMQioqC8JJqXBtOnozVIaAnEPEALw_wcB,$0.88,MISC
+436500202,5,2-Pin Molex Gold TH,Molex Box,,,Connectors
+436450200,3,2-Pin Molex Mate,Molex Box,,,Connectors
+436500302,5,3-Pin Molex Gold TH,Molex Box,,,Connectors
+436450300,11,3-Pin Molex Mate,Molex Box,,,Connectors
+436500402,4,4-Pin Molex Gold TH,Molex Box,,,Connectors
+436450400,13,4-Pin Molex Mate,Molex Box,,,Connectors
+436500502,1,5-Pin Molex Gold TH,Molex Box,,,Connectors
+436450500,6,5-Pin Molex Mate,Molex Box,,,Connectors
+436500602,4,6-Pin Molex Gold TH,Molex Box,,,Connectors
+436450600,3,6-Pin Molex Mate,Molex Box,,,Connectors
+436500702,1,7-Pin Molex Gold TH,Molex Box,,,Connectors
+436450700,1,7-Pin Molex Mate,Molex Box,,,Connectors
+436500802,4,8-Pin Molex Gold TH,Molex Box,,,Connectors
+436450800,14,8-Pin Molex Mate,Molex Box,,,Connectors
+436500902,1,9-Pin Molex Gold TH,Molex Box,,,Connectors
+436500900,29,9-Pin Molex Mate,Molex Box,,,Connectors
+430451002,2,10-Pin Molex Gold TH,Molex Box,,,Connectors
+430251000,0,10-Pin Molex Mate,Molex Box,,,Connectors
+436501202,6,12-Pin Molex Gold TH,Molex Box,,,Connectors
+436451200,11,12-Pin Molex Mate,Molex Box,,,Connectors
+430451202,2,12-Pin Molex Gold TH,Molex Box,,,Connectors
+430251200,4,12-Pin Molex Mate,Molex Box,,,Connectors
+430451402,1,14-Pin Molex Gold TH,Molex Box,,,Connectors
+430251400,2,14-Pin Molex Mate,Molex Box,,,Connectors
+430451602,0,16-Pin Molex Gold TH,Molex Box,,,Connectors
+430251600,0,16-Pin Molex Mate,Molex Box,,,Connectors
+430451802,0,18-Pin Molex Gold TH,Molex Box,,,Connectors
+430251800,3,18-Pin Molex Mate,Molex Box,,,Connectors
+430452002,0,20-Pin Molex Gold TH,Molex Box,,,Connectors
+430252000,1,20-Pin Molex Mate,Molex Box,,,Connectors
+430452202,0,22-Pin Molex Gold TH,Molex Box,,,Connectors
+430252200,1,22-Pin Molex Mate,Molex Box,,,Connectors
+436500313,3,HV 2-Pin Molex SMD,Molex Box,,,Connectors
