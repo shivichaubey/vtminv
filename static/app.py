@@ -4,9 +4,6 @@ from flask import render_template
 import hashlib
 from datetime import datetime, timedelta
 
-
-
-
 app = Flask(__name__)
 
 db_config = {
