@@ -7,10 +7,10 @@ from datetime import datetime, timedelta
 app = Flask(__name__)
 
 db_config = {
-    'host': 'vtmotorsportsinv-server.mysql.database.azure.com',
-    'user': 'udugeqkkup',
-    'password': '7QJYY876G6BB8125$',
-    'database': 'vtmotorsportsinv-database'
+    'host': 'vtmotorsportsinv.mysql.database.azure.com',
+    'user': 'vtmotorsports',
+    'password': 'FormulaSAE123',
+    'database': 'vtm'
 }
 
 app.secret_key = 'your_secret_key' 
