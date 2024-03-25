@@ -10,7 +10,7 @@ db_config = {
     'host': 'vtmotorsportsinv-server.mysql.database.azure.com',
     'user': 'udugeqkkup',
     'password': '7QJYY876G6BB8125$',
-    'database': 'vtm'
+    'database': 'vtmotorsportsinv-database'
 }
 
 app.secret_key = 'your_secret_key' 
