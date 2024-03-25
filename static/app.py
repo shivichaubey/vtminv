@@ -10,10 +10,10 @@ from datetime import datetime, timedelta
 app = Flask(__name__)
 
 db_config = {
-    'host': 'localhost',
-    'user': 'root',
-    'password': 'ShiviSia3',
-    'database': 'wtf'
+    'host': 'vtmotorsportsinv.mysql.database.azure.com',
+    'user': 'vtmotorsports@vtmotorsportsinv',
+    'password': 'FormulaSAE123',
+    'database': 'vtm'
 }
 
 app.secret_key = 'your_secret_key' 
